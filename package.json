@@ -2,6 +2,7 @@
   "name": "mandatory1",
   "version": "1.0.0",
   "description": "Mandatory assignment for KEA NodeJS course",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Meerwaldten/NodeJSMandatory1/issues"
   },
-  "homepage": "https://github.com/Meerwaldten/NodeJSMandatory1#readme"
+  "homepage": "https://github.com/Meerwaldten/NodeJSMandatory1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
