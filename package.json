@@ -1,0 +1,23 @@
+{
+  "name": "mandatory1",
+  "version": "1.0.0",
+  "description": "Mandatory assignment for KEA NodeJS course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meerwaldten/NodeJSMandatory1.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "KEA"
+  ],
+  "author": "Mikkel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meerwaldten/NodeJSMandatory1/issues"
+  },
+  "homepage": "https://github.com/Meerwaldten/NodeJSMandatory1#readme"
+}
