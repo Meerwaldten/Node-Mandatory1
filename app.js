@@ -11,14 +11,46 @@ const frontpagePage = templateEngine.renderPage(frontpage, {
     tabTitle: "Welcome! | Hejsa"
 });
 
+const javascript = templateEngine.readPage("./public/pages/javascript.html");
+const javascriptPage = templateEngine.renderPage(javascript, {
+    tabTitle: "All about Javascript"
+});
+
+const nodejs = templateEngine.readPage("./public/pages/nodejs.html");
+const nodejsPage = templateEngine.renderPage(nodejs, {
+    tabTitle: "NodeJS is super cool"
+});
+
+const codestandards = templateEngine.readPage("./public/pages/codestandards.html");
+const codestandardsPage = templateEngine.renderPage(codestandards, {
+    tabTitle: "Codestandards are very important"
+});
+
+const serving = templateEngine.readPage("./public/pages/serving.html");
+const servingPage = templateEngine.renderPage(serving, {
+    tabTitle: "How to serve a side"
+});
+
 
 app.get("/", (req, res) => {
     res.send(frontpagePage);
-})
+});
 
+app.get("/javascript", (req, res) => {
+    res.send(javascriptPage);
+});
 
+app.get("/nodejs", (req, res) => {
+    res.send(nodejsPage);
+});
 
+app.get("/codestandards", (req, res) => {
+    res.send(codestandardsPage);
+});
 
+app.get("/serving", (req, res) => {
+    res.send(servingPage);
+});
 
 
 

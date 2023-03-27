@@ -1,9 +1,8 @@
 import fs from "fs";
-import escape from "escape-html";
 
 function renderPage (page, config={}) {
     const nav = fs.readFileSync("./public/components/nav/nav.html").toString()
-    .replace(("$TAB_TITLE"), config.tabTitle || "Welcome!");
+    .replace(("$TAB_TITLE"), config.tabTitle || "Welcome!")
 
     const footer = fs.readFileSync("./public/components/footer/footer.html").toString();
 
