@@ -8,7 +8,7 @@ app.use(express.static("public"))
 
 const frontpage = templateEngine.readPage("./public/pages/frontpage.html");
 const frontpagePage = templateEngine.renderPage(frontpage, {
-    tabTitle: "Welcome! | Hejsa"
+    tabTitle: "Welcome!"
 });
 
 const javascript = templateEngine.readPage("./public/pages/javascript.html");
