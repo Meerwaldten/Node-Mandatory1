@@ -1,0 +1,46 @@
+<h2>
+    Variables in Javascript; <br>
+</h2>
+<h3>
+    Which variables exists and what's their pros & cons!
+</h3>
+<h3>
+    "let":
+</h3>
+    <h4>
+        Pros: <br>
+        "let" variables are block-scoped; They can only be accessed within the block of code where they are declared. <br>
+        They also can't be redeclared within that block, which can prevent errors. - They can however be reassigned! <br>
+        Cons: <br>
+        They can be harder to access, since they only exists within blocks. <br>
+        They also must be declared before being used, which can be annoying. <br>
+        Might not be supported in all versions of Javascript. <br>
+        When to use: If you have to.
+    </h4>
+    <img src="../assests/img/var2.PNG">
+<h3>
+    "var":
+</h3>
+    <h4>
+        Pros: <br>
+        The orignal way of declaring in Javascript and therefor supported in all versions of Javascript. <br>
+        "var "is function-scoped, meaning they can be accessed within the function in which they're decleared. - Also able to be redeclared and reassigned in same scope. <br>
+        Cons: <br>
+        Can be hoisted, meaning they can be accessed before they're declared which can cause confusion and errors. <br>
+        They're not block-scoped, so they can be accessed outside of where they're declared. <br>
+        "var" variables can easily be overwritten or redeclared which can lead to unexpected behavior and errors.
+        When to use: Never!
+    </h4>
+    <img src="../assests/img/var1.PNG">
+<h3>
+    "const":
+</h3>
+    <h4>
+        Pros: <br>
+        "const" variables are block-scoped, same as "let". <br>
+        They can't be redeclared or reassigned within their scope, which can prevent errors. <br>
+        Therefore they're useful for declaring values that shouldn't be changed; constants or configuration settings, etc. <br>
+        When to use: Always if you can get away with it!
+    </h4>
+    <img src="../assests/img/var3.PNG"> 
+</h3>

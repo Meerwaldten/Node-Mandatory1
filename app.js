@@ -11,9 +11,14 @@ const frontpagePage = templateEngine.renderPage(frontpage, {
     tabTitle: "Welcome!"
 });
 
-const javascript = templateEngine.readPage("./public/pages/javascript.html");
-const javascriptPage = templateEngine.renderPage(javascript, {
-    tabTitle: "All about Javascript"
+const functions = templateEngine.readPage("./public/pages/functions.html");
+const functionsPage = templateEngine.renderPage(functions, {
+    tabTitle: "All about functions"
+});
+
+const variables = templateEngine.readPage("./public/pages/variables.html");
+const variablesPage = templateEngine.renderPage(variables, {
+    tabTitle: "All about variables"
 });
 
 const nodejs = templateEngine.readPage("./public/pages/nodejs.html");
@@ -36,8 +41,12 @@ app.get("/", (req, res) => {
     res.send(frontpagePage);
 });
 
-app.get("/javascript", (req, res) => {
-    res.send(javascriptPage);
+app.get("/functions", (req, res) => {
+    res.send(functionsPage);
+});
+
+app.get("/variables", (req, res) => {
+    res.send(variablesPage);
 });
 
 app.get("/nodejs", (req, res) => {

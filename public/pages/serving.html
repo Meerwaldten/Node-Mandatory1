@@ -1,3 +1,23 @@
-<h1>Client side</h1>
-<h3>vs</h3>
-<h1>Server side</h1>
+<h1>Difference between client-side and server-side rendering!</h1>
+<h2>Client-side rendering:</h2>
+<h4>
+    Client-side rendering (CSR) means that HTML, CSS and Javascript is downloaded by the clients browser and rendered dynamically as a single-page applicantion (SPA). <br>
+    The server sends only the initial HTML and JavaScript needed to load the SPA, 
+    and then the client's browser handles all subsequent interactions, rendering new content on the fly using JavaScript. <br>
+    CSR is often used in web applications that require a high level of interactivity or that need to fetch data from an API
+</h4>
+<img>
+<h2>Server side rendering:</h2>
+<h4>
+    Server-side rendering (SSR) means that the HTML, CSS, and JavaScript that make up a web page are generated on the server and sent to the client as a complete page. <br>
+    The client's browser does not need to do any additional processing to render the page, because the server has already done all the work. <br>
+    SSR is often used in web applications that rely heavily on SEO (Search Engine Optimization) or that have complex content that is difficult to render on the client.
+</h4>
+<img>
+<h4>
+    In Node.js, we can use frameworks to handle SSR. They help by generating templates on the server and sending them to the client as complete pages. <br>
+    The one we've used is Express. Here is an example of how my "templateEngine" helps render the pages. <br>
+    <img src="../assests/img/template1.PNG">
+    <img src="../assests/img/template2.PNG"> <br>
+    For CSR, frameworks that can help could be React and Angular. 
+</h4>
