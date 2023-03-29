@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
 const login = templateEngine.readPage("./public/pages/login/login.html");
-const loginPage = templateEngine.renderPage(login, {
+const loginPage = templateEngine.renderLoginPage(login, {
     tabTitle: "Please log in"
 });
 

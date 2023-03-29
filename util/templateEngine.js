@@ -9,6 +9,14 @@ function renderPage (page, config={}) {
     return nav + page + footer;
 }
 
+function renderLoginPage(page, config={}) {
+    const nav = fs.readFileSync("./public/components/nav/navLogin.html").toString()
+    .replace(("$TAB_TITLE"), config.tabTitle || "Welcome, please log in")
+
+    const footer = fs.readFileSync("./public/components/footer/footer.html").toString();
+    return nav + page + footer;
+}
+
 
 function readPage(pagePath) {
     return fs.readFileSync(pagePath).toString();
@@ -16,5 +24,6 @@ function readPage(pagePath) {
 
 export default {
     renderPage,
-    readPage
+    readPage,
+    renderLoginPage
 }

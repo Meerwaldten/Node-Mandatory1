@@ -3,18 +3,22 @@
 <br>
 <h3>In the top of the site, you'll find links/redirects to different topics we've covered so far.</h3>
 
-<h3>Input a message to have it displayed!</h3>
-
-
-<label>
-    Input message:
-</label>
-<input  id="message">
-<button type="button" onclick="addMessage()">Submit</button>
+<h2>We're open for suggestions make more sites. Form under here!</h2>
+<form action="/api/suggestions" method="POST">
+    <label>Input your name</label> <br>
+    <input id="name" placeholder="your name" value="Mikkel"> <br>
+    <label>Input your Email</label> <br>
+    <input type="email" id="email" placeholder="your email" value="Mikkel@Hej.dk"> <br>
+    <label>Input your suggestion for a new site:</label> <br>
+    <input placeholder="subject" id="subject" value="More about JavaScript"> <br>
+    <label>Input short description of your suggestion:</label> <br>
+    <textarea id="description" cols="40" rows="10"></textarea><br>
+    <button type="button" onclick="sendSuggestion()">Submit</button>
+</form>
 <br>
 
 
-<h2 id="displayMessage"></h2>
+<h2 id="displaySuggestion"></h2>
 
 
 
