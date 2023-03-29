@@ -79,7 +79,11 @@ app.post("/login", (req, res) => {
     }else {
         res.redirect("/");
     }
-})
+});
+
+app.post("/api/suggestions", (req, res) => {
+    res.send(req.body);
+});
 
 
 const PORT = 8080;
